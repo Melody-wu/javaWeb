@@ -1,0 +1,9 @@
+body{
+    background: #ccc;
+}
+.main-bar{
+    background: #fff;
+}
+.no-padding {
+    padding: 0;
+}
