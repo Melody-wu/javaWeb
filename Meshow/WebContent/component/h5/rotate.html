@@ -1,0 +1,158 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		
+
+		.container{
+
+			width: 900px;
+			height: 100px;
+			background: #b6b6b6;
+			margin: 20px auto;
+			padding:100px 50px;
+			perspective: 600px;
+			
+		}
+		.box{
+			
+			transform-style: preserve-3d;
+			width: 128px;
+			height: 100px;
+
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -64px;
+			margin-top: -50px;
+
+			transition: 1s;
+
+		}
+
+		.box .piece{
+			
+			width: 128px;
+			height: 100px;
+			position: absolute;
+		
+		}
+
+		.piece:nth-child(1){
+
+			transform:rotateY(0deg) translateZ(195px);
+
+		}
+		.piece:nth-child(2){
+
+			transform:rotateY(40deg) translateZ(195px);
+
+		}
+		.piece:nth-child(3){
+
+			transform:rotateY(80deg) translateZ(195px);
+
+		}
+		.piece:nth-child(4){
+
+			transform:rotateY(120deg) translateZ(195px);
+
+		}
+		.piece:nth-child(5){
+
+			transform:rotateY(160deg) translateZ(195px);
+
+		}
+		.piece:nth-child(6){
+
+			transform:rotateY(200deg) translateZ(195px);
+
+		}
+		.piece:nth-child(7){
+
+			transform:rotateY(240deg) translateZ(195px);
+
+		}
+		.piece:nth-child(8){
+
+			transform:rotateY(280deg) translateZ(195px);
+
+		}
+		.piece:nth-child(9){
+
+			transform:rotateY(320deg) translateZ(195px);
+
+		}
+		img{
+			width: 100%;
+			height: 100%;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		
+			
+			<div class="box">
+				
+					<div class="piece" style="background-color: rgba(51, 181, 204, 0.74902)">
+						
+
+						<img src="http://uploads.yjbys.com/allimg/201609/3958-1609101HRK18.jpg" alt="">
+					</div>
+                    <div class="piece" style="background-color: rgba(51, 204, 61, 0.74902);">
+                    	<img src="http://wumenglong.duapp.com/libs/img/sw1.jpg" alt="">
+                    </div>
+                    <div class="piece" style="background-color: rgba(179, 204, 51, 0.74902);">
+                    	<img src="http://wumenglong.duapp.com/libs/img/sw2.jpg" alt="">
+                    </div>
+                    <div class="piece" style="background-color: rgba(51, 99, 204, 0.74902); ">
+                    	<img src="http://wumenglong.duapp.com/libs/img/sw3.jpg" alt="">
+                    </div>
+                    <div class="piece" style="background-color: rgba(204, 51, 197, 0.74902);">
+                    	<img src="http://wumenglong.duapp.com/libs/img/sw4.jpg" alt="">
+                    </div>
+                    <div class="piece" style="background-color: rgba(204, 51, 140, 0.74902); ">
+                    	<img src="http://wumenglong.duapp.com/libs/img/sw5.jpg" alt="">
+                    </div>
+                    <div class="piece" style="background-color: rgba(204, 204, 51, 0.74902);">
+                    	<img src="http://wumenglong.duapp.com/libs/img/sw6.jpg" alt="">
+                    </div>
+                    <div class="piece" style="background-color: rgba(204, 51, 197, 0.74902); ">
+                    	<img src="http://wumenglong.duapp.com/libs/img/sw7.jpg" alt="">
+                    </div>
+                    <div class="piece" style="background-color: rgba(51, 171, 204, 0.74902); ">
+                    	<img src="http://wumenglong.duapp.com/libs/img/sw8.jpg" alt="">
+                    </div>
+			</div>
+
+	</div>
+
+	<script>
+		var index = 0;
+		document.onclick = function(){
+
+			var oBox = document.getElementsByClassName('box')[0];
+
+			index++
+
+			var num = 40*index
+
+			oBox.style.transform = 'rotateY('+num+'deg)';
+
+
+		}
+
+
+	</script>
+
+
+</body>
+</html>

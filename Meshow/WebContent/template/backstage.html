@@ -1,0 +1,21 @@
+<!-- 页面头部 -->
+<div class="app-head" ng-include="'template/header.html'"></div>
+<!-- 左边侧边栏-->
+<div class="app-left" id="app_left">
+    <div ng-include="'template/sidebar.html'"></div>
+</div>
+<!-- 中间内容 -->
+<div class="app-content" id="app_content">
+    <div ui-view="viewContent" class="content clear"></div>
+    <div class="app-footer" ng-include="'template/footer.html'"></div>
+</div>
+<!-- 右边侧边栏 -->
+<div class="app-right" id="app_right">
+	<div ng-include="'template/siderbar-right.html'"></div>
+</div>
+
+
+
+
+
+
